@@ -1,7 +1,7 @@
 ## Установка  
-git clone  
+git clone git@github.com:TarakanovAndrey/test_project.git  
 make install  
-В директории проекта создайте файл .env и задайте перменные окружения:
+В директории проекта создайте файл .env и задайте перменные окружения:  
 SECRET_KEY= -любая длинная последовательность различных символов.  
 OPENWEATHERMAP_KEY= - получаете при создании аккаунта на https://openweathermap.org/  
 SQLALCHEMY_DATABASE_URI=sqlite:///db.db
@@ -24,5 +24,5 @@ https://openweathermap.org/. Правильнее подавать на вход
 меньше ноля, то баланск приравнивается к нолю.
 6. Gunicorn запускается по схеме процессы + gevent командой make start. Для запуска dev сервера исполльзуется команда 
 команда make dev.
-7. Обновление баланса происходит по url "http://127.0.0.1:5000/update/balance" - dev решжим и 
+7. Обновление баланса происходит по url "http://127.0.0.1:5000/update/balance" - dev режим и 
 "http://0.0.0.0:8000/update/balance" - рабочий режим. Реализован шаблон. 
